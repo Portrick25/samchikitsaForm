@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+    margin: 0;
+}
+body{
+    background-color:whitesmoke ;
+}
+.header h3{
+    font-size: 3em;
+    color: tomato;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'ebuchet MS', sans-serif;
+    left: 10%;
+    top: 7%;
+}
+.brand-img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 110px;
+    left: 6%;
+    top:2cm;
+}
+.save{
+    font-size: 1.3em;
+    color: white;
+    background-color: rgb(0, 162, 255);
+    padding: 1em;
+    position: absolute;
+    font-family: monospace;
+    left: 80%;
+    top: 5%;
+}
+.save:hover{
+    background-color: green;
+}
+
+.file{
+    position: absolute;
+    left: 1%;
+    top: 30%;
+    width: 40%;
+    font-size: 1.3em;
+    padding-left: 1cm;
+    padding-top: 0.5cm;
+    background-color: white;
+}
+.file2{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 40%;
+    font-size: 1.3em;
+    padding-left: 1cm;
+    padding-top: 5mm;
+    background-color: white;
+}
+.file2 input,labelS{
+    margin-top: 0.2mm;
+}
+h2{
+    margin-top: 0.4em;
+    margin-bottom: 0.2cm;
+
+}
+.attachment{
+    width: 200mm;
+    height: 290mm;
+    position: absolute;
+    left: 0.1%;
+    top: 110%;
+}
+h1{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+    color: teal;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.file input,label{
+    margin: 0.3cm;
+    padding: .1cm;
+}
+    </style>
+    <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samchikitsa.com</title>
+</head>
+<body>
+   <div id="content">
+    <div class="header">
+        <img class="brand-img" src="logo.png" alt="logo">
+        <h3> SAMCHIKITSA </h3>
+        <button class="save" onclick="window.print()">SAVE AS PDF </button>
+    </div>
+<h1>PATIENT FORM</h1>
+ <form action="">   
+    <div class="file">
+            <h2>PERSONAL INFO</h2>
+            <label for="name">Name</label>
+            <input type="text" name="Name" placeholder="Name(Required)" required><br>
+            <label for="Religion">Religion</label>
+            <input type="text" name="Religion" placeholder="Religion(optional)" required><br>
+            <label for="Gender">Gender</label>
+            <label for="Male">male</label>
+            <input type="radio" name="Gender" id="Male" required>
+            <label for="female">female</label>
+            <input type="radio" name="Gender" id="Female" required><br>
+            <label for="Height">Height(In cms)</label>
+            <input type="number" name="Height" placeholder="Height(required)" required><br>
+            <label for="Height">weight(In kgs)</label>
+            <input type="number" name="Weight" placeholder="Weight(required)" required>
+            
+            <br>
+            <h2>PRESENT COMPLAINTS</h2>
+            <textarea name="present_conplaint" id="" cols="50" rows="5" placeholder="Enter Your Present Complaints(required)" required></textarea>
+    <br>
+            <h2>PAST MEDICAL HISTORY</h2>
+            <textarea name="present_conplaint" id=""  cols="50" rows="5" placeholder="Enter Any past medical history" required></textarea><br>
+            <input id="src" placeholder="only jpeg or png file"  type="file"/>(only jpeg or png files) <!-- input you want to read from (src) -->
+            <img class="attachment" id="target"/> <!-- image you want to display it (target) -->
+
+            
+            
+
+        </div>
+        <div class="file2">
+
+          
+            <h2>FAMILY HISTORY</h2>
+            <input type="checkbox" name="Diabetes" id="">
+            <label for="Diabetes">DIABETES</label>
+            <input type="checkbox" name="HyperTension" id="">
+            <label for="HyperTension">HYPERTENSION</label><br>
+            <input type="checkbox" name="THYROID" id="">
+            <label for="THYROID">THYROID</label>
+            <input type="checkbox" name="ARTHRITIS" id="">
+            <label for="ARTHRITIS">ARTHRITIS</label><br>
+            <input type="checkbox" name="SPINE-DISEASES" id="">
+            <label for="SPINE-DISEASES">SPINE DISEASE</label>
+            <input type="checkbox" name="TB-TUBERCULOSIS" id="">
+            <label for="TB-TUBERCULOSIS">TB | TUBERCULOSIS</label><br>
+            <input type="checkbox" name="Any-Cardiac-ouble" id="">
+            <label for="Any-Cardiac-ouble">ANY CARDIAC OUBLE</label>
+            <input type="checkbox" name="Cancer_Tumor" id="">
+            <label for="Cancer_Tumor">CANCER | TUMOR</label>
+              
+            <h2>PHYSICAL GENERALS</h2>
+                     
+        1. APETITE:<br>
+        <label for="Less">Less</label>
+        <input type="radio" name="Apetite" id="">
+        <label for="normal">Normal</label>
+        <input type="radio" name="Apetite" id="">
+        <label for="High">High</label>
+        <input type="radio" name="Apetite" id=""><br>
+        
+        
+        2. THIRST(glass/day):<br>
+        <label for="Less">0-5</label>
+        <input type="radio" name="thirst" id="">
+        <label for="normal">5-10</label>
+        <input type="radio" name="thirst" id="">
+        <label for="High">10-15</label>
+        <input type="radio" name="thirst" id=""><br>
+        
+        
+        
+            
+        3. TASTE YOU LIKE MOST:<br>
+        <label for="Less">sour</label>
+        <input type="radio" name="taste" id="">
+        <label for="normal">salty</label>
+        <input type="radio" name="taste" id="">
+        <label for="High">sweet</label>
+        <input type="radio" name="taste" id="">
+        <label for="High">spicy</label>
+        <input type="radio" name="taste" id="">
+        <br>
+        
+        
+        4. SLEEP:<br>
+        <label for="Less">Less</label>
+        <input type="radio" name="sleep" id="">
+        <label for="normal">Normal</label>
+        <input type="radio" name="sleep" id="">
+        <label for="High">High</label>
+        <input type="radio" name="sleep" id=""><br>
+        
+        
+        
+            
+        5. STOOP:<br>
+        <label for="Less">Contstipated</label>
+        <input type="radio" name="stoop" id="">
+        <label for="normal">Diarrhoea</label>
+        <input type="radio" name="stoop" id="">
+        <label for="High">Normal</label>
+        <input type="radio" name="stoop" id=""><br>
+        
+        
+        
+        6. URINE(Number of times):<br>
+        <label for="Less"> 0-6 </label>
+        <input type="radio" name="urine" id="">
+        <label for="normal">6-10</label>
+        <input type="radio" name="urine" id="">
+        <label for="High">>10</label>
+        <input type="radio" name="urine" id=""><br>
+        
+        
+        
+            
+        7. ADDICTIONS:<br>
+        <input type="checkbox" name="Alcohol" id="">
+        <label for="Alcohol">ALCOHOL</label>
+        <input type="checkbox" name="Tobacco" id="">
+        <label for="Tobacco">TOBACCO </label><br>
+        <input type="checkbox" name="Smoking" id="">
+        <label for="Smoking">SMOKING </label>
+        <input type="checkbox" name="MArijuana" id="">
+        <label for="Marijuana">MARIJUANA</label><br>
+    
+
+
+        </div>
+    </form>
+   </div> 
+
+   <script>
+    function showImage(src,target) {
+  var fr=new FileReader();
+  // when image is loaded, set the src of the image where you want to display it
+  fr.onload = function(e) { target.src = this.result; };
+  src.addEventListener("change",function() {
+    // fill fr with image data    
+    fr.readAsDataURL(src.files[0]);
+  });
+}
+
+var src = document.getElementById("src");
+var target = document.getElementById("target");
+showImage(src,target);
+</script>   
+</body>
+</html>
