@@ -5,8 +5,7 @@
         *{
     margin: 0;
 }
-body{
-    background-color:whitesmoke ;
+body{ 
     width: 300mm;
     height: 297mm;
 }
@@ -15,26 +14,25 @@ body{
     color: tomato;
     position: absolute;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'ebuchet MS', sans-serif;
-    right: 57%;
-    top: 7%;
+    left: 45%;
+    top: 4%;
 }
 .brand-img{
     position: absolute;
-    transform: translate(-50%,-50%);
-    width: 200px;
-    height: 140px;
-    left: 50%;
-    top:1.7cm;
+    width: 6cm;
+    height: 4cm;
+    left: 30%;
+    top:;
 }
 .save{
     font-size: 1.3em;
     color: white;
     background-color: rgb(0, 162, 255);
-    padding: 1em;
+    padding: 0.3em;
     position: absolute;
     font-family: monospace;
-    left: 60%;
-    top: 7%;
+    left: 90%;
+    top: 2%;
     border-radius: 10px ;
 }
 .save:hover{
@@ -42,6 +40,7 @@ body{
 }
 
 .file{
+    border: solid black 1px;
     position: absolute;
     left: 1%;
     top: 20%;
@@ -51,6 +50,7 @@ body{
     background-color: white;
 }
 .file2{
+    border: solid black 1px;
     position: absolute;
     left: 50%;
     top: 20%;
@@ -66,6 +66,7 @@ h2{
     margin-left: .6cm;
     margin-top: 0.4em;
     margin-bottom: 0.2cm;
+    text-decoration: underline;
 
 }
 .attachment{
@@ -110,33 +111,36 @@ h1{
  <form action="">   
     <div class="file">
             <h2>PERSONAL INFO</h2>
+            <div style="margin-left: 0.4cm;">
             <label for="name">Name</label>
             <input type="text" name="Name" placeholder="Name(Required)" required><br>
             <label for="DOB">Age</label>
-            <input type="number" name="DOB" placeholder="" id=""><br>
-            <label for="address">Address</label>
-            <textarea placeholder="Enter your address" name="address"></textarea><br>
+            <input type="number" name="DOB" placeholder="Age(required)" id=""><br>
             <label for="Gender">Gender:</label>
             <label for="Male">male</label>
             <input type="radio" name="Gender" id="Male" required>
             <label for="female">female</label>
             <input type="radio" name="Gender" id="Female" required><br>
-            <label for="Height">Height(In cms):</label>
-            <input type="number" name="Height" placeholder="Height(required)" required><br>
+            <label for="Height">Height(cm/inches/feets):</label>
+            <input type="text" name="Height" placeholder="Height(required)" required><br>
             <label for="Height">weight(In kgs):</label>
             <input type="number" name="Weight" placeholder="Weight(required)" required><br>
             <label for="Religion">Religion:</label>
             <input type="text" name="Religion" placeholder="Religion(optional)" required><br>
-            
+            <label for="address">Address</label>
+            <textarea placeholder="Enter your address" name="address"></textarea><br>
+            </div>
             <br>
             <h2>PRESENT COMPLAINTS</h2>
+            <div style="margin-left: 0.4cm;">
             <textarea name="present_conplaint" id="" cols="50" rows="5" placeholder="Enter Your Present Complaints(required)" required></textarea>
-    <br>
+    <br></div>
+
             <h2>PAST MEDICAL HISTORY</h2>
-            <textarea name="present_conplaint" id=""  cols="50" rows="5" placeholder="Enter Any past medical history(drag to write more)" required></textarea><br>
+    <div style="margin-left: 0.4cm;">        <textarea name="present_conplaint" id=""  cols="50" rows="5" placeholder="Enter Any past medical history(drag to write more)" required></textarea><br>
             <input id="src" placeholder="only jpeg or png file"  type="file"/>(only jpeg or png files) <!-- input you want to read from (src) -->
             <img class="attachment" id="target"/> <!-- image you want to display it (target) -->
-
+        </div>
             
             
 
@@ -145,6 +149,7 @@ h1{
 
           
             <h2>FAMILY HISTORY</h2>
+            <div class="history" style="margin-left: 0.4cm;">
             <input type="checkbox" name="Diabetes" id="">
             <label for="Diabetes">DIABETES</label>
             <input type="checkbox" name="HyperTension" id="">
@@ -161,10 +166,12 @@ h1{
             <label for="Any-Cardiac-ouble">ANY CARDIAC OUBLE</label>
             <input type="checkbox" name="Cancer_Tumor" id="">
             <label for="Cancer_Tumor">CANCER | TUMOR</label>
+            </div>
               
             <h2>PHYSICAL GENERALS</h2>
+            <div class="" style="margin-left: 0.4cm; margin-bottom: 0.3cm;">
                      
-        1. APETTITE:<br>
+        1. APPETITE:<br>
         <input type="radio" name="Apetite" id="">
         <label for="Less">Less</label>
         <input type="radio" name="Apetite" id="">
@@ -211,7 +218,7 @@ h1{
         
         
             
-        5. STOOl:<br>
+        5. STOOL:<br>
         <input type="radio" name="stoop" id="">
         <label for="Less">Contstipated</label>
         <input type="radio" name="stoop" id="">
@@ -244,7 +251,7 @@ h1{
         <input type="checkbox" name="MArijuana" id="">
         <label for="Marijuana">MARIJUANA</label><br>
     
-
+</div>
 
         </div>
     </form>
