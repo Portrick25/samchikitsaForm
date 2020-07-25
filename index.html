@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
     <style>
         *{
     margin: 0;
@@ -12,18 +13,22 @@ body{
 .header h3{
     font-size: 2.5em;
     color: tomato;
+    padding-left:0.5cm ;
     position: absolute;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'ebuchet MS', sans-serif;
-    left: 45%;
-    top: 4%;
+    font-family:'Barlow Semi Condensed', sans-serif;
+    text-decoration: underline;
+    left: 47%;
+    top: 7%;
 }
 .brand-img{
     position: absolute;
-    width: 6cm;
-    height: 4cm;
+    padding:5mm;
+    width: 3cm;
+    height: 3cm;
     left: 30%;
-    top:;
 }
+
+
 .save{
     font-size: 1.3em;
     color: white;
@@ -67,6 +72,7 @@ h2{
     margin-top: 0.4em;
     margin-bottom: 0.2cm;
     text-decoration: underline;
+    font-family:'Barlow Semi Condensed', sans-serif;
 
 }
 .attachment{
@@ -94,21 +100,23 @@ h1{
 }
 @media only screen and (max-width: 450px){
     body{
-        width:100vw;}
-.brand-img{
+        width: 100vw;
+    }
+    .header img{
     position: absolute;
-    left: 5%;
+    left: 10%;
+    padding:0.2cm;
     top: 1%;
-    width: 7em;
-    height: 5em;
+    width: 2cm;
+    height: 2cm;
 
 }
 .header h3{
     position: absolute;
     left: 30%;
-    text-decoration:underline;
-    top: 6%;
-    font-size: 1.5em;
+    top: 4%;
+    font-size: 2em;
+    
 }
 .file{
     left: 0.1%;
@@ -117,22 +125,21 @@ h1{
     top: 15%;
 }
 .file2{
-    left:0.1%;
     width: 98vw;
     position: absolute;
-    top: 130%;
+    top: 125%;
     left: 1%;
 }
 .save{
     position: absolute;
     left: 1%;
-    top: 230%;
+    top: 213%;
 }
 .attachment{
     position: absolute;
     left: 0.1%;
-    top: 250%;
-    width: 98vw;
+    top: 220%;
+    width: 99vw;
 }
 textarea{
     width: 80vw;
@@ -149,7 +156,7 @@ textarea{
 <body>
    <div id="content">
     <div class="header">
-        <img class="brand-img" src="logo.png" alt="logo">
+        <img class="brand-img" src="logo1.jpeg" alt="logo">
         <h3> SAMCHIKITSA </h3>
         <button class="save" onclick="window.print()">SAVE AS PDF </button>
     </div>
